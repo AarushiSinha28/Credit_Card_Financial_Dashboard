@@ -40,8 +40,3 @@ Previous_week_Reveneue = CALCULATE(
  ALL('public cc_detail'),
  'public cc_detail'[week_num2] = MAX('public cc_detail'[week_num2])-1))
 
-## Credit Card Transaction Report
-<iframe width="100%" height="800" src="Credit card Transaction Report.pdf">
-
-## Credit card Customer Report
-<iframe width="100%" height="800" src="Credit card Coustomer Report.pdf">
