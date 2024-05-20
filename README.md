@@ -1,13 +1,16 @@
 # Credit_Card_Financial_Dashboard
 Power Bi Dashboard
+
 # Objective
-## To develop a comprehensive credit card weekly dashboard that provides real-time insights into key performance metrics and trends, enabling stakeholders to monitor and analyze credit card operations effectively.
-# Impoer data to SqL database
+To develop a comprehensive credit card weekly dashboard that provides real-time insights into key performance metrics and trends, enabling stakeholders to monitor and analyze credit card operations effectively.
+
+# Import data to SqL database
 1. Prepare csv file
 2. Create table in SQL
 3. import csv file into SOL
 
 # DAX Queries
+
 AgeGroup = SWITCH(
  TRUE(),
  'public cust_detail'[customer_age] < 30, "20-30",
@@ -37,4 +40,8 @@ Previous_week_Reveneue = CALCULATE(
  ALL('public cc_detail'),
  'public cc_detail'[week_num2] = MAX('public cc_detail'[week_num2])-1))
 
+## Credit Card Transaction Report
+<iframe width="100%" height="800" src="Credit card Transaction Report.pdf">
 
+## Credit card Customer Report
+<iframe width="100%" height="800" src="Credit card Coustomer Report.pdf">
